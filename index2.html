@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title>日本語で美しい横書き</title>
+        <style>
+            #fit {
+                width: 5rem;
+                text-align: justify;
+            }
+            #over {
+                width: calc(6rem - 1px);
+                text-align: justify;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>日本語のテキストは両端揃えが基本だと筆者は思うのですが、多くのサイトはそうなってません。</p>
+
+        <p>ちょうど5remに設定した場合、</p>
+        <div id="fit">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ</div>
+
+        <p>6remに1px足りない場合、</p>
+        <div id="over">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ</div>
+
+        <p>なので、両端揃えをするときには文字数ちょうどだけwidthを設定する必要があります。</p>
+
+    </body>
+</html>

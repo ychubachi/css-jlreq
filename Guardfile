@@ -20,5 +20,5 @@
 # end
 
 guard :livereload do
-  watch(/index.html/)
+  watch(/index.*.html/)
 end
